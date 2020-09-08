@@ -34,6 +34,11 @@
       "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
       "import/prefer-default-export": "off",
       "prettier/prettier": "error",
+      "no-plusplus": "off",
+      "import/no-unresolved": "off",
+      "no-param-reassign": "off",
+      "consistent-return": "off",
+      "no-console": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
