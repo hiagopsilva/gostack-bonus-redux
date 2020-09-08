@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import GlobalStyles from './styles/global';
-import Routes from './routes/index';
+import store from './store';
+
+import Catalog from './components/Catalog';
+import Cart from './components/Cart';
 
 const App: React.FC = () => (
-  <>
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
-    <GlobalStyles />
-  </>
+  <Provider store={store}>
+    <Catalog />
+    <Cart />
+  </Provider>
 );
 
 export default App;
