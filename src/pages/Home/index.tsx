@@ -1,12 +1,14 @@
 import React from 'react';
-import Welcome from '../../components/Welcome';
+import Catalog from '../../components/Catalog';
+import Cart from '../../components/Cart';
 
 import { Container } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Welcome />
+      <Catalog />
+      <Cart />
     </Container>
   );
 };
